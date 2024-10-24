@@ -25,7 +25,7 @@ def encode():
     return encoded_password
 
 def decode():
-  password = input()
+  password = encoded_password
   decodedPass = '' # initialized string answer
   for i in password: # indexing through string
     oldDigit = (int(i)-3) % 10 #reverting encoding process
